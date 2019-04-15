@@ -34,3 +34,10 @@ const longestCommonPrefix = function(strs) {
         return prev.slice(0, i);
     });
 };
+
+//Solution removeDuplicates
+const removeDuplicates = function(nums) {
+    return nums.filter((num, index) => {
+        return nums.indexOf(num) == index;
+    });
+};
